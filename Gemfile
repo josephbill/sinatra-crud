@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'sinatra-activerecord'
+gem 'sqlite3'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'rake'
+gem 'activerecord', '~> 6.1.0'
+gem 'sinatra-flash'
+gem 'rack'
+gem 'sinatra-contrib'

@@ -1,0 +1,18 @@
+<h1>New Post for <%= @user.name %></h1>
+<form action="/users/<%= @user.id %>/posts" method="post" enctype="multipart/form-data">
+  <label for="title">Title:</label>
+  <input type="text" name="post[title]" id="title">
+<label for="content">Content:</label>
+
+  <textarea name="post[content]" id="content"></textarea>
+<label for="image">Image:</label>
+<input type="file" name="post[image]" id="image">
+<input id="nameoffile" type="text" placeholder="post[image][filename]" id="">
+<script>
+    document.getElementById('nameoffile').value = document.getElementById('image').value
+</script>
+# <label for="title">Title:</label>
+# <input type="text" name="post[user_id]" id="title" placeholder="<%= @user.id %>">
+
+  <input type="submit" value="Create">
+</form>
